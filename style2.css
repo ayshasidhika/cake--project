@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    background-color: brown;
+    color: white;
+}
+
+.navbar-center {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ham-icon {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+.ham-icon input[type="checkbox"] {
+    appearance: none;
+}
+
+.hotel-name {
+    font-size: 34px;
+    color: white;
+    letter-spacing: 8px;
+}
+
+.hotel-subtitle {
+    font-size: 25px;
+    color:white;
+}
+
+.navigation {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.navigation li {
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.navigation a {
+    color: white;
+}
+.logo h1{
+    color: #eeeeee;
+    font-family: "Dancing Script", cursive;
+    font-weight: bolder;
+}
+.navigation a {
+    color:white;
+    text-decoration: none;
+    padding: 0px 2px;
+}
+
+.navigation a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background:rgb(234, 124, 190);
+    transition: width .3s;
+}
+.navigation a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+.icon {
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+    
+  .top h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 4rem 0;
+    font-size: 4rem;
+    color: brown;
+    letter-spacing: 10px;
+    text-decoration: underline peachpuff;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+} 
+ .top p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+    color: brown;
+
+} 
+.content{
+    width: 50%;
+    height: 40vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgb(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+.content:hover{
+    opacity: 1;
+}
+.content h1{
+    font-size: 45px;
+    color: white;
+    margin-bottom: 15px;
+}
+.collection1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pop {
+    width: 30%;
+    background-color: rgb(244, 236, 236);
+    border: 3px solid floralwhite;
+    transition: transform 1s;
+    color: honeydew;
+}
+.pop:hover{
+    transform: scale(0.9);
+    box-shadow: 10px 10px 20px gray;
+}
+.pop1 img{
+    width: 10%;
+    height: 20vh;
+    /* object-fit: cover; */
+}
+.pop1 {
+    padding: 8% 10%;
+    object-fit: cover;
+    width: 100%;
+    height: 280px;
+}
+.container-a {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    line-height: 25px;
+}
+.container-a h4{
+    font-size: 25px;
+}
+.heading h5{
+    text-align: center;
+    font-size: 30px;
+    color: brown;
+    margin: 20px 0;
+
+}
+.vid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.vid video{
+    height: 60vh;
+    width: 80%;
+    object-fit: cover;
+}
+.team {
+    width: 100%;
+    height: 75vh;
+
+}
+.team .team-box {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 13%;
+    gap: 5rem;
+}
+.team .team-box .profile {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: 0.4s;
+    background-color: #fff;
+}
+.team .team-box .profile img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    transition: 0.4s;
+}
+.team .team-box .profile:hover{
+    border-radius: 50%;
+    height: 320px;
+}
+.team .team-box .profile .info {
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transition: 0.4s;
+    font-size: 15px;
+}
+.team .team-box .profile:hover .info{
+    top: 60%;
+}
+.team .team-box .profile:hover img{
+    border-radius: 50%;
+    margin-top: -230px;
+}
+.team .team-box .profile .info .name {
+    color: indianred;
+    margin-bottom: 15px;
+}
+.team .team-box .profile .info .bio {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+.team .team-box .profile .info .team-icon i {
+    margin: 2px 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.heading h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 43px;
+    padding: 40px 0;
+    color: brown;
+}
+.testimonials {
+    background-color: rgb(218, 206, 206);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial {
+    background: rgb(183, 98, 98);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(176, 12, 12, 0.1);
+    padding: 20px;
+    margin: 10px 0;
+    max-width: 600px;
+    width: 100%;
+}
+
+.testimonial-text {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-size: 1em;
+    color: white;
+}
+.footer {
+    background-color:brown;
+    width: 100%;
+    height: auto;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.items1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.items1 a:hover {
+    color: white;
+}
+
+.contact ul li {
+    list-style: none;
+    font-size: 23px;
+    font-weight: 300;
+    color: #fff;
+}
+.contact ul li img{
+  width: 10rem;
+}
+.contact i:hover {
+    color: black;
+}
+.contact  li h1{
+    width: 15rem;
+    color: #eeeeee;
+    font-family: "Dancing Script", cursive;
+    font-weight: bolder;
+}
+.contact i {
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+}
+.contact li p {
+    padding-bottom: 20px;
+    color: pink;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.contact li:hover {
+    color: black;
+}
+@media only screen and (min-width: 300px) and (max-width: 850px) {
+
+ 
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 0 10px 10px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .navigation {
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.7rem;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .ham-icon {
+        display: block;
+        order: 2;
+    }
+    i.fa-solid.fa-x {
+        display: none;
+    }
+
+    .fa-x,
+    .fa-bars {
+        color: white;
+        font-size: 1.7rem;
+    }
+    .navbar:has(input[type="checkbox"]:checked) .navigation {
+        margin-top: 1rem;
+        height: 270px;
+    }
+
+    .navbar:has(input[type="checkbox"]:checked) .fa-bars {
+        display: none;
+    }
+
+    .navbar:has(input[type="checkbox"]:checked) .fa-x {
+        display: inline-block;
+    }
+    .icon{
+        display:none ;
+    }
+}
+@media (min-width:991px) and (max-width:1200px){
+    .team{
+        height:55vh;
+    }
+
+}
+@media (min-width:769px) and (max-width:991px){
+    .team {
+        width: 100%;
+            height: 76vh;
+    }
+}
+@media (min-width:577px) and (max-width:768px){
+    .team .team-box {
+        flex-direction: column;
+        gap: 6em;
+        margin-bottom: 6em;
+    }
+    .team {
+        width: 100%;
+            height: 100%;
+    }
+}
+
+@media (min-width:300px) and (max-width:576px){
+    .team .team-box {
+        flex-direction: column;
+        gap: 6em;
+        margin-bottom: 6em;
+    }
+    .team {
+        width: 100%;
+            height: 100%;
+    }
+    .pop{
+        width: 80%;
+    }
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .contact ul{
+        width: 50%;
+        text-align: center;
+    }
+
+}
+   

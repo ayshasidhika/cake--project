@@ -1,0 +1,491 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    background-color: brown;
+}
+
+.navbar-center {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ham-icon {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+.ham-icon input[type="checkbox"] {
+    appearance: none;
+}
+
+.hotel-name {
+    font-size: 34px;
+    color: white;
+    letter-spacing: 8px;
+}
+
+.hotel-subtitle {
+    font-size: 25px;
+    color:white;
+}
+
+.navigation {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.navigation li {
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.navigation a {
+    color: white;
+}
+.logo h1{
+    color: #eeeeee;
+    font-family: "Dancing Script", cursive;
+    font-weight: bolder;
+}
+.navigation a {
+    color:white;
+    text-decoration: none;
+    padding: 0px 2px;
+}
+
+.navigation a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background:rgb(234, 124, 190);
+    transition: width .3s;
+}
+
+.navigation a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+.icon {
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: sandybrown;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+   width: 50%;
+}
+
+@media (max-width: 768px) {
+    .banner-text {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-text {
+        font-size: 1rem;
+        padding: 2px;
+    }
+}
+.category {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 34px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.main-category {
+    background-color: rgb(239, 198, 163);
+}
+
+.main-category h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(111, 12, 12);
+    margin-bottom: 50px;
+    padding-top: 1em;
+    font-size: 55px;
+    font-family: "Playwrite AU QLD";
+
+}
+.category img {
+    height: 21em;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 45px;
+    transition: 1s;
+    box-shadow: 3px 1px 1px brown;
+    transition: transform 1s;
+}
+
+.category img:hover {
+    transform: scale(0.9);
+    z-index: 2;
+}
+
+.main-category h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(111, 12, 12);
+    margin-bottom: 50px;
+    padding-top: 1em;
+    font-size: 55px;
+    font-family: "Playwrite AU QLD";
+}
+
+.category img:hover {
+    transform: scale(1.08);
+    z-index: 2;
+}
+
+.category img:hover {
+    transform: scale(1.08);
+    z-index: 2;
+}
+
+.main-category h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(111, 12, 12);
+    margin-bottom: 50px;
+    padding-top: 1em;
+    font-size: 55px;
+    font-family: "Playwrite AU QLD";
+}
+
+.about {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about h1 {
+    padding: 10px;
+    font-size: 54px;
+    color: brown;
+    font-family: "Playwrite AU QLD";
+}
+
+.cake {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.pic img {
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: -2px -2px 0px 2px brown;
+}
+.pic img:hover{
+    transition: .3s;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.text {
+    width: 50%;
+    height: 100%;
+    padding: 10px
+}
+
+.text h2 {
+    color: brown;
+    font-size: 37px;
+    margin-bottom: 50px;
+    padding-top: 1em;
+    font-family: "Playwrite AU QLD";
+
+}
+@keyframes blink {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: .5;
+    }
+  
+    ;
+  
+    100% {
+      opacity: 1;
+    }
+}
+
+.text p {
+    color: brown;
+    font-size: 25px;
+    font-family:cursive;
+    /* font-family: "Dancing Script", cursive; */
+    animation: blink 2s linear infinite;
+}
+.footer {
+    background-color:brown;
+    width: 100%;
+    height: auto;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.contact  li h1{
+    width: 15rem;
+    color: #eeeeee;
+    font-family: "Dancing Script", cursive;
+    font-weight: bolder;
+}
+
+
+.items1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.items1 a:hover {
+    color: white;
+}
+
+.contact ul li {
+    list-style: none;
+    line-height: 2rem;
+    font-size: 23px;
+    font-weight: 300;
+    color: #fff;
+}
+.contact i:hover {
+    color: black;
+}
+
+.contact i {
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+}
+.contact li p {
+    padding-bottom: 20px;
+    color: pink;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact li:hover {
+    color: black;
+}
+.main-category img{
+    width: 300px;
+    height: 300px;
+}
+
+
+    @media only screen and (max-width:900px){
+        .team{
+            height: 60vh;
+        }
+        .contact{
+            display: flex;
+            justify-content: center;
+            padding-top: 6em;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        
+
+    } 
+    @media only screen and (max-width:930px){
+        .contact {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+@media only screen and (min-width: 300px) and (max-width:850px) {
+
+ 
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 0 10px 10px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .navigation {
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.7rem;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .ham-icon {
+        display: block;
+        order: 2;
+    }
+    i.fa-solid.fa-x {
+        display: none;
+    }
+
+    .fa-x,
+    .fa-bars {
+        color: white;
+        font-size: 1.7rem;
+    }
+    .navbar:has(input[type="checkbox"]:checked) .navigation {
+        margin-top: 1rem;
+        height: 270px;
+    }
+
+    .navbar:has(input[type="checkbox"]:checked) .fa-bars {
+        display: none;
+    }
+
+    .navbar:has(input[type="checkbox"]:checked) .fa-x {
+        display: inline-block;
+    }
+    .icon{
+        display:none ;
+    }
+}
+   @media only screen and (max-width:775px){
+    .about{
+        flex-direction: column;
+
+    }
+    .about .text p{
+        width: 100%;
+       display: flex;
+       white-space:no;
+       font-size: 1rem;
+    }
+    .contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+    .contact ul {
+    width: 50%;
+    text-align: center;
+}
+.text p{
+    font-size: 20px;
+}
+ }
+ @media only screen and (max-width:500px){
+     .cake{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+     } 
+     .main-category img{
+      height: 200px;
+      width: 200px;
+    }
+    .contact ul li {
+        width: 11rem;
+    }
+    .text {
+        width: 100%;
+        height: 100%;
+    }
+ }
+ @media only screen and (max-width:360px){
+    .main-category img{
+        height: 200px;
+        width: 200px;
+        
+    }
+    .main-category h3{
+        font-size: 2.5rem;
+    }
+    .main-category h5{
+        font-size: 2.5rem;
+    }
+    .about .text p{
+        font-size: 14px;
+    }
+    .about h1{
+        font-size: 2.5rem;
+    }
+ }
+   
+
+    
+  

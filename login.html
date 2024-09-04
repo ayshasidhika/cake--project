@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <title>contact Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* body,
+        h1,
+        form,
+        input,
+        textarea,
+        button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        /* body {
+            background-size: cover;
+            background-position: center;
+            color: black;
+        } */
+        
+    .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    background-color: brown;
+}
+
+
+.navbar-center {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ham-icon {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+.ham-icon input[type="checkbox"] {
+    appearance: none;
+}
+
+.hotel-name {
+    font-size: 34px;
+    color: white;
+    letter-spacing: 8px;
+}
+
+.hotel-subtitle {
+    font-size: 25px;
+    color:white;
+}
+
+.navigation {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.navigation li {
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.navigation a {
+    color: white;
+}
+.logo h1{
+    color: #eeeeee;
+    font-family: "Dancing Script", cursive;
+    font-weight: bolder;
+}
+.navigation a {
+    color:white;
+    text-decoration: none;
+    padding: 0px 2px;
+}
+
+.navigation a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background:rgb(234, 124, 190);
+    transition: width .3s;
+}
+
+.navigation a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+.icon {
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            background-image: url(https://i.pinimg.com/564x/2a/66/3c/2a663c87998452d0aeec660241f912cf.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .contact-form {
+            background: transparent;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            margin-top: 4em;
+            box-shadow: 0 0 10px rgba(159, 14, 14, 0.3);
+        }
+
+        .contact-form h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            /* font-weight: bold; */
+            font-size: 28px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid rgb(106, 14, 14);
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(147, 28, 28);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: sandybrown;
+        }
+
+        .map {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: peachpuff;
+        }
+
+        .map iframe {
+            width: 70%;
+            margin: 20px;
+            height: 80vh;
+        }
+        .footer {
+    background-color:brown;
+    width: 100%;
+    height: auto;
+}
+
+.contact {
+     display: flex;
+    justify-content: space-evenly;
+    padding-top: 3em;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.contact  li h1{
+    width: 15rem;
+    color: #eeeeee;
+    font-family: "Dancing Script", cursive;
+    font-weight: bolder;
+}
+
+
+.items1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.items1 a:hover {
+    color: white;
+}
+
+.contact ul li {
+    list-style: none;
+    line-height: 2rem;
+    font-size: 23px;
+    font-weight: 300;
+    color: #fff;
+}
+.contact i:hover {
+    color: black;
+}
+
+.contact i {
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+}
+.contact li p {
+    padding-bottom: 20px;
+    color: pink;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact li:hover {
+    color: black;
+}
+/* .main-category img{
+    width: 300px;
+    height: 300px;
+} */
+@media only screen and (min-width: 300px) and (max-width:850px) {
+
+ 
+.navbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 0 10px 10px;
+    justify-content: space-between;
+}
+
+.logo {
+    order: 1;
+}
+
+.navigation {
+    order: 3;
+    width: 100%;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.7rem;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.ham-icon {
+    display: block;
+    order: 2;
+}
+i.fa-solid.fa-x {
+    display: none;
+}
+
+.fa-x,
+.fa-bars {
+    color: white;
+    font-size: 1.7rem;
+}
+.navbar:has(input[type="checkbox"]:checked) .navigation {
+    margin-top: 1rem;
+    height: 270px;
+}
+
+.navbar:has(input[type="checkbox"]:checked) .fa-bars {
+    display: none;
+}
+
+.navbar:has(input[type="checkbox"]:checked) .fa-x {
+    display: inline-block;
+}
+.icon{
+    display:none ;
+}
+}
+@media only screen and (max-width:900px){
+        
+        .contact{
+            display: flex;
+            justify-content: center;
+            padding-top: 6em;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        
+
+    } 
+    /* @media only screen and (max-width:930px){
+        .contact {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    } */
+
+    </style>
+</head>
+
+<body>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><i class="fa-solid fa-cake-candles" style="color: rgb(239, 198, 163);font-size:35px;"></i>
+                Cakeshop</h1>
+            </div>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#category">category</a></li>
+                <li><a href="navbar.html">product</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="login.html">Contact</a></li>
+            </ul>
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <button class="ham-icon">
+                <label for="ham-label">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-x"></i>
+                </label>
+                <input type="checkbox" id="ham-label" />
+            </button>
+        </nav>
+    <div class="contact-container">
+        <div class="contact-form">
+            <h1>Contact Us</h1>
+            <form action="/submit-form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="map"> <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509869!2d144.95373531532154!3d-37.81627977975151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727e319a1553c!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1594264443669!5m2!1sen!2sau">
+        </iframe>
+    </div>
+    <div class="footer" id="contact">
+        <div class="contact">
+            <ul>
+                <li>
+                    <h1><i class="fa-solid fa-cake-candles" style="color: rgb(239, 198, 163);font-size:35px;"></i>
+                        Cakeshop</h1>
+                </li>
+                <li>complex, papaer mills</li>
+            </ul>
+            <ul>
+                <li>
+                    <p>Contact</p>
+                </li>
+                <li>www.cakebakery.com</li>
+                <li>757-336-8843 & 757-336-8503</li>
+            </ul>
+            <ul>
+                <li>
+                    <p>Company</p>
+                </li>
+                <li class="items1"><a href="#">Home</a></li>
+                <li class="items1"><a href="#">About</a></li>
+                <li class="items1"><a href="#">category</a></li>
+                <li class="items1"><a href="#">product</a></li>
+                <li class="items1"><a href="#"> Gallery</a></li>
+                <li class="items1"><a href="#">Contact</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p>Follow us</p>
+                </li>
+                <a href="http://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="http://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
